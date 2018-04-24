@@ -9,6 +9,7 @@ players = gets.strip.to_i
 if players == 1
   puts "Player 1 is X and will go first."
   Game.new(Players::Human.new("X"), Players::Computer.new("O"))
+  Game.play
 end
 # if players == 1
 #   puts "What is the name of the Player?"
