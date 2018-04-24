@@ -70,18 +70,19 @@ class Game
     else
       @board.update(current_move, player)
     end
+  end
 
-    def play
-      while !over?
-        turn
-      end
-      if won?
-        puts "Congratulations #{winner}!"
-      elsif draw?
-        puts "Cat's Game!"
-      end
-
+  def play
+    while !over?
+      turn
     end
+    if won?
+      puts "Congratulations #{winner}!"
+    elsif draw?
+      puts "Cat's Game!"
+    end
+
+  end
 
   end
 
