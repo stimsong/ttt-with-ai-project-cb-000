@@ -5,4 +5,9 @@ require_relative '../config/environment'
 puts "Welcome to Tic Tac Toe!"
 puts "How many players? (0, 1, 2)"
 players = gets.strip.to_i
+
+if players == 1
+  puts "What is the name of the Player?"
+  player_1 = gets.strip
+end
 binding.pry
