@@ -9,5 +9,10 @@ players = gets.strip.to_i
 if players == 1
   puts "What is the name of the Player?"
   player_1 = gets.strip
+elsif players == 2
+  puts "What is the name of Player 1?"
+  player_1 = gets.strip
+  puts "What is the name of Player 2?"
+  player_2 = gets.strip
 end
 binding.pry
