@@ -2,22 +2,22 @@
 
 require_relative '../config/environment'
 
-# puts "Welcome to Tic Tac Toe!"
-# game = Game.new
-# until game.won?
-#   game.play
-# end
-
 puts "Welcome to Tic Tac Toe!"
-puts "How many players? (0, 1, 2)"
-players = gets.strip.to_i
-
-if players == 1
-  puts "Player 1 is X and will go first."
-  game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
-  # binding.pry
+game = Game.new
+until game.won?
   game.play
 end
+
+# puts "Welcome to Tic Tac Toe!"
+# puts "How many players? (0, 1, 2)"
+# players = gets.strip.to_i
+# 
+# if players == 1
+#   puts "Player 1 is X and will go first."
+#   game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
+#   # binding.pry
+#   game.play
+# end
 
 # if players == 1
 #   puts "What is the name of the Player?"
